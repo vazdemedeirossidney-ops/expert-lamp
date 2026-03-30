@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney Vaz | VIP FANS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: sans-serif; }
+        .pink-gradient { background: linear-gradient(135deg, #ff007a 0%, #d63384 100%); }
+        .card-glass { background: rgba(20, 20, 20, 0.95); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="flex flex-col items-center pb-20">
+
+    <!-- Status de Vagas -->
+    <div class="w-full bg-white text-black py-2 text-[10px] font-black uppercase text-center sticky top-0 z-50">
+        🔥 <span id="vagas">104</span> VAGAS DISPONÍVEIS AGORA
+    </div>
+
+    <!-- Header -->
+    <div class="w-full h-48 pink-gradient relative flex justify-center">
+        <div class="absolute -bottom-12 w-32 h-32 rounded-full border-4 border-[#050505] bg-zinc-900 flex items-center justify-center overflow-hidden shadow-2xl">
+            <span class="text-4xl font-black italic text-zinc-700">SV</span>
+        </div>
+    </div>
+
+    <!-- Perfil -->
+    <div class="mt-16 text-center px-6">
+        <h1 class="text-2xl font-black uppercase italic tracking-tighter">Sidney Vaz</h1>
+        <p class="text-pink-500 font-bold text-xs tracking-widest uppercase">@sidney_vaz</p>
+        <p class="mt-4 text-zinc-400 text-sm italic max-w-xs leading-relaxed">
+            "O conteúdo que o Instagram proíbe, eu publico aqui. Vídeos e fotos sem censura todos os dias." 🔞
+        </p>
+    </div>
+
+    <!-- Botões de Compra -->
+    <div class="w-full max-w-sm px-6 mt-10 space-y-4">
+        <a href="https://mpago.la/2hPuTuK" class="block w-full card-glass p-5 rounded-3xl flex justify-between items-center border-l-4 border-pink-500 shadow-xl active:scale-95 transition-all">
+            <div class="text-left">
+                <span class="block font-black text-lg italic uppercase">Assinatura Mensal</span>
+                <span class="text-[10px] text-zinc-500 uppercase font-bold">Acesso total imediato</span>
+            </div>
+            <span class="text-xl font-black italic">R$ 29,90</span>
+        </a>
+
+        <a href="https://mpago.la/2hPuTuK" class="block w-full pink-gradient p-5 rounded-3xl text-center shadow-[0_0_30px_rgba(255,0,122,0.3)] active:scale-95 transition-all">
+            <span class="block font-black text-lg italic uppercase">Plano Anual Elite</span>
+            <span class="text-[10px] text-white/80 uppercase font-bold tracking-tighter italic">Pagas menos de R$ 0,70 por dia</span>
+        </a>
+    </div>
+
+    <!-- Feed Bloqueado -->
+    <div class="w-full max-w-sm px-6 mt-12">
+        <div class="relative h-64 w-full rounded-[2.5rem] overflow-hidden border border-zinc-800">
+            <div class="absolute inset-0 bg-black/80 backdrop-blur-md z-10 flex flex-col items-center justify-center p-6 text-center">
+                <i class="fa-solid fa-lock text-3xl text-pink-500 mb-4 animate-pulse"></i>
+                <h3 class="font-black italic uppercase text-lg">Mural Bloqueado</h3>
+                <p class="text-zinc-500 text-[10px] mt-2 mb-6 uppercase font-bold">Assina para ver +150 mídias exclusivas</p>
+                <a href="https://mpago.la/2hPuTuK" class="text-pink-500 font-black uppercase italic text-xs tracking-widest border-b-2 border-pink-500 pb-1">Desbloquear Agora</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400" class="w-full h-full object-cover grayscale opacity-20">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-16 opacity-20 text-center">
+        <p class="text-[10px] font-black uppercase tracking-[0.4em]">Pagamento Seguro Mercado Pago</p>
+    </div>
+
+    <script>
+        let v = 104;
+        setInterval(() => {
+            if (v > 7) {
+                v -= Math.floor(Math.random() * 2);
+                document.getElementById('vagas').innerText = v;
+            }
+        }, 6000);
+    </script>
+</body>
+</html>
+
