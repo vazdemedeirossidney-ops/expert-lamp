@@ -5,38 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sidney Vaz | VIP FANS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: -apple-system, system-ui, sans-serif; }
+        .pink-gradient { background: linear-gradient(135deg, #ff007a 0%, #d63384 100%); }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .shimmer { position: relative; overflow: hidden; }
+        .shimmer::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); animation: shine 3s infinite; }
+        @keyframes shine { from { left: -100%; } to { left: 100%; } }
+    </style>
 </head>
-<body class="bg-[#050505] text-white flex flex-col items-center p-8 font-sans min-h-screen">
-    
-    <!-- Círculo de Perfil -->
-    <div class="w-24 h-24 rounded-full border-4 border-pink-500 mb-4 bg-zinc-900 flex items-center justify-center text-3xl font-bold italic shadow-[0_0_20px_rgba(236,72,153,0.3)]">
-        SV
+<body class="flex flex-col items-center pb-24">
+
+    <!-- Banner e Perfil -->
+    <div class="w-full h-48 pink-gradient relative flex justify-center shadow-lg">
+        <div class="absolute -bottom-12 w-32 h-32 rounded-full border-[5px] border-[#050505] bg-zinc-900 flex items-center justify-center overflow-hidden shadow-2xl">
+            <span class="text-4xl font-black italic text-zinc-700">SV</span>
+        </div>
     </div>
 
-    <!-- Nome e User -->
-    <div class="text-center mb-12">
+    <!-- Nome e Bio -->
+    <div class="mt-16 text-center px-8">
         <h1 class="text-3xl font-black uppercase italic tracking-tighter">Sidney Vaz</h1>
-        <p class="text-pink-500 font-bold text-sm tracking-widest uppercase">@sidney_vaz</p>
+        <p class="text-pink-500 font-bold text-xs tracking-[0.3em] uppercase mt-1">Conteúdo Exclusivo</p>
+        <p class="mt-4 text-zinc-400 text-sm italic max-w-xs leading-relaxed">
+            "Acede ao meu lado mais privado. Fotos e vídeos sem censura que o Instagram baniu." 🔞
+        </p>
     </div>
 
-    <!-- Botões de Pagamento -->
-    <div class="w-full max-w-xs space-y-6">
+    <!-- Opções de Pagamento -->
+    <div class="w-full max-w-sm px-6 mt-10 space-y-6">
         
-        <!-- BOTÃO MENSAL -->
-        <a href="https://mpago.la/2hPuTuK" class="block w-full bg-gradient-to-r from-pink-600 to-rose-500 p-6 rounded-2xl text-center font-black uppercase italic shadow-xl active:scale-95 transition-all">
-            🔥 ACESSO VIP MENSAL
+        <!-- PLANO MENSAL -->
+        <a href="https://mpago.la/2hPuTuK" class="block w-full glass p-6 rounded-[2rem] flex justify-between items-center border-l-4 border-pink-500 shadow-xl active:scale-95 transition-all">
+            <div class="text-left">
+                <span class="block font-black text-lg italic uppercase">Mensal VIP</span>
+                <span class="text-[9px] text-zinc-500 uppercase font-black tracking-widest">Acesso por 30 dias</span>
+            </div>
+            <div class="text-right">
+                <span class="text-xl font-black italic">R$ 29,90</span>
+            </div>
         </a>
 
-        <!-- BOTÃO ANUAL -->
-        <a href="https://mpago.la/2hPuTuK" class="block w-full bg-zinc-900 border border-white/10 p-6 rounded-2xl text-center font-black uppercase italic active:scale-95 transition-all text-zinc-400">
-            💎 PLANO ANUAL
+        <!-- PLANO ANUAL (DESTAQUE) -->
+        <a href="https://mpago.la/2hPuTuK" class="block w-full pink-gradient p-[2px] rounded-[2rem] shadow-[0_0_30px_rgba(255,0,122,0.2)] active:scale-95 transition-all shimmer">
+            <div class="bg-[#050505] p-6 rounded-[2rem] flex justify-between items-center relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-white text-black text-[8px] font-black px-4 py-1 rounded-bl-lg uppercase italic">MELHOR PREÇO</span>
+                <div class="text-left">
+                    <span class="block font-black text-lg italic uppercase text-white">Anual Elite</span>
+                    <span class="text-[9px] text-pink-500 uppercase font-black italic">12 meses de acesso</span>
+                </div>
+                <div class="text-right">
+                    <span class="text-xl font-black italic text-pink-500">R$ 249,90</span>
+                </div>
+            </div>
         </a>
 
     </div>
 
-    <!-- Rodapé de Segurança -->
-    <div class="mt-auto pt-20 opacity-20 text-[10px] font-black uppercase tracking-[0.4em] text-center">
-        PAGAMENTO SEGURO MERCADO PAGO
+    <!-- Feed Bloqueado Preview -->
+    <div class="w-full max-w-sm px-6 mt-12">
+        <div class="relative h-80 w-full rounded-[2.5rem] overflow-hidden border border-zinc-800 bg-zinc-900/50 flex flex-col items-center justify-center p-8 text-center">
+            <i class="fa-solid fa-lock text-3xl text-pink-500 mb-4 opacity-50"></i>
+            <h3 class="font-black italic uppercase text-lg">Mural Privado</h3>
+            <p class="text-zinc-500 text-[10px] mt-2 uppercase font-bold tracking-tighter">
+                Assina agora para desbloquear todo o conteúdo.
+            </p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="mt-16 opacity-20 text-center">
+        <p class="text-[9px] font-black uppercase tracking-[0.4em] text-zinc-500">Pagamento Seguro Mercado Pago</p>
     </div>
 
 </body>
