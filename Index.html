@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sidney Vaz | VIP FANS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body { 
+            background-color: #000000; 
+            color: #ffffff; 
+            font-family: 'Inter', sans-serif; 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .premium-card {
+            background: linear-gradient(145deg, #121212 0%, #080808 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .premium-card:active {
+            transform: scale(0.97);
+            border-color: #ff007a;
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(255, 0, 122, 0.15);
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, #ff007a, #ffffff, #ff007a);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .profile-border {
+            background: linear-gradient(45deg, #ff007a, #7c3aed);
+            padding: 3px;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center pb-20">
+
+    <!-- Top Banner -->
+    <div class="w-full h-40 bg-zinc-900 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+    </div>
+
+    <!-- Profile Area -->
+    <div class="relative -mt-16 flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full profile-border shadow-2xl">
+            <div class="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden border-4 border-black">
+                 <!--  -->
+                <span class="text-4xl font-black italic text-zinc-800">SV</span>
+            </div>
+        </div>
+        <div class="mt-4 flex items-center gap-2">
+            <h1 class="text-2xl font-black uppercase tracking-tighter italic">Sidney Vaz</h1>
+            <i class="fa-solid fa-circle-check text-blue-500 text-sm"></i>
+        </div>
+        <p class="text-pink-500 font-bold text-[10px] tracking-[0.4em] uppercase mt-1">Global VIP Member</p>
+    </div>
+
+    <!-- Bio -->
+    <div class="px-10 text-center mt-6">
+        <p class="text-zinc-400 text-sm leading-relaxed max-w-xs font-medium italic">
+            "Direct access to my private life. Daily uncensored content, high-quality videos, and 1-on-1 interaction." 🔞
+        </p>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="w-full max-w-[360px] px-6 mt-12 space-y-5">
+        
+        <!-- MONTHLY SUBSCRIPTION -->
+        <a href="https://mpago.la/2hPuTuK" class="block w-full premium-card p-6 rounded-[2.5rem] flex justify-between items-center relative overflow-hidden group">
+            <div class="flex flex-col">
+                <span class="text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-1 group-active:text-pink-500">Monthly Access</span>
+                <span class="text-xl font-black italic">VIP SUBSCRIPTION</span>
+            </div>
+            <div class="text-right">
+                <span class="text-2xl font-black text-white">$9.99</span>
+            </div>
+        </a>
+
+        <!-- YEARLY SUBSCRIPTION (DESTAK) -->
+        <a href="https://mpago.la/2hPuTuK" class="block w-full premium-card p-[2px] rounded-[2.5rem] gold-glow active:scale-95 transition-all">
+            <div class="bg-black p-6 rounded-[2.5rem] flex justify-between items-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-600"></div>
+                <div class="flex flex-col">
+                    <span class="text-pink-500 text-[10px] font-black uppercase tracking-widest mb-1">Yearly Elite • Most Popular</span>
+                    <span class="text-xl font-black italic shimmer-text">ANNUAL PASS</span>
+                </div>
+                <div class="text-right">
+                    <span class="text-2xl font-black text-white">$69.90</span>
+                    <span class="block text-[9px] text-zinc-500 font-bold uppercase">-40% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- SINGLE PACK OPTION -->
+        <a href="https://mpago.la/2hPuTuK" class="block w-full premium-card p-6 rounded-[2.5rem] flex justify-between items-center opacity-80">
+            <div class="flex flex-col">
+                <span class="text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-1">One-time Purchase</span>
+                <span class="text-xl font-black italic">PHOTO PACK</span>
+            </div>
+            <div class="text-right">
+                <span class="text-2xl font-black text-white">$4.90</span>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- Visual Feed Teaser -->
+    <div class="w-full max-w-sm px-6 mt-16 text-center">
+        <div class="border-t border-zinc-900 pt-8">
+            <h3 class="text-zinc-600 text-[11px] font-black uppercase tracking-[0.3em] mb-6">Subscription Benefits</h3>
+            <div class="grid grid-cols-3 gap-4 text-zinc-400">
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-xl text-pink-500"></i>
+                    <span class="text-[8px] font-black uppercase tracking-widest">HQ Photos</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-play text-xl text-pink-500"></i>
+                    <span class="text-[8px] font-black uppercase tracking-widest">4K Videos</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-comments text-xl text-pink-500"></i>
+                    <span class="text-[8px] font-black uppercase tracking-widest">Private Chat</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-24 px-10 text-center opacity-30">
+        <p class="text-[8px] font-black uppercase tracking-[0.5em] mb-4">Secure Payment Gateway</p>
+        <div class="flex justify-center gap-6 text-2xl grayscale">
+             <i class="fa-brands fa-cc-visa"></i>
+             <i class="fa-brands fa-cc-mastercard"></i>
+             <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+    </div>
+
+</body>
+</html>
+
